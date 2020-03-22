@@ -1,6 +1,6 @@
 <div class="main-nav float"><div class="container" style="height: 100%;"><div class="row" style="height: 100%;"><div class="col-sm-12 col-md-3 logo"><a href="<?php $this->options->siteUrl() ?>"><img src="<?php $this->options->logo(); ?>"></a></div><div class="col-sm-12 col-md-8 col-xl-8_5 menu-wrap">
 <div class="menuLeft">
-</div><div class="searchRight visible-xs visible-sm"><div class="normal_searchBtn" onclick="javascript:location.href='<?php $this->options->sourl(); ?>'"><i class="icon font_family icon-search"></i></div></div>
+</div><div class="searchRight visible-xs visible-sm"><div class="normal_searchBtn" style="<?php if($this->is('page', 'so')): ?>background:#20a0ff;color:#fff;<?php endif ?>" onclick="javascript:location.href='<?php $this->options->sourl(); ?>'"><i class="icon font_family icon-search"></i></div></div>
 <div pandatab="" class="topNav" active-class=".current-menu-item,.current-menu-ancestor" sub-class=".sub-menu">
 <ul class="menu">
 	<li class="menu-item <?php if($this->is('index')): ?>current-menu-item<?php endif ?>"><a href="<?php $this->options->siteUrl(); ?>"><i class="icon font_family icon-home"></i> 首页</a></li>

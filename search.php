@@ -10,6 +10,19 @@
 <div class="col-xs-12"><div class="row"><div class="row postLists cards" height-to="sidebar">
 <?php if ($this->have()): ?>
 <?php while($this->next()): ?>
+<div class="global_search_form fullscreen_search visible container" style="padding-top: 60px;"><div class="searchbox clearfix">
+<form name="myform" onkeydown="if(event.keyCode==13){return false;}">
+<input style="color:#8492a6" name="name" type="search" placeholder="请输入关键词"></form>
+<span class="button" @click="so()"><span class="icon"><i class="icon font_family icon-search"></i></span></span></div></div>
+<a href="search" id="overso" style="display:none"></a>
+<script type="text/javascript">
+function so(){
+var name=document.myform.name.value;
+var overhref = "../search/"+name;
+document.getElementById("overso").setAttribute("href",overhref); 
+document.getElementById("overso").click();
+};
+</script>
 <div class="col-xxs-6 col-xs-4 col-lg-3 post-card-wrapper"><div class="card"><a href="<?php $this->permalink() ?>" class="cover" style="background-image: url(<?php $this->fields->toutu(); ?>);" showas="padding"></a><a href="<?php $this->permalink() ?>" showas="img"><img src="<?php $this->fields->toutu(); ?>" class="cover" alt=""></a><div class="meta"><h2><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2><div class="tags"><a class="color-1" style="margin-left: -20px;"><?php $this->category(','); ?></a>
 </div><div class="summary"><span class="comments"><i class="icon font_family icon-clock"></i> <?php $this->date('n月j日 · Y年'); ?></span> </div></div></div></div>
 <?php endwhile; ?></div><?php include('pagenav.php'); ?>

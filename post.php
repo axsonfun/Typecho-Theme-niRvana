@@ -15,10 +15,9 @@
 <div class="container postListsModel"><div class="row"><div class="col-md-12 col-lg-12"><div class="col-xs-12"><div class="row postLists"><div class="article_wrapper post clearfix"><div class="meta"><span class="inline-block"><i class="icon font_family icon-clock"></i><?php $this->date('n月j日 · Y年'); ?></span><span class="inline-block"><i class="icon font_family icon-bookmark"></i><?php $this->category(''); ?></span>
 </div><article class="clearfix">
 <?php $this->content(); ?>
-
 </article>
 <?php include('share.php'); ?>
 </div>
-<?php include('relate.php'); ?>
+<?php $this->options->xgwz(); ?>
 <?php include('comments.php'); ?>
 </div></div></div></div></div></div></div></div></div></div><?php include('footer.php'); ?>

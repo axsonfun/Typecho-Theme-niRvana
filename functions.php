@@ -22,8 +22,8 @@ $guanjianci = new Typecho_Widget_Helper_Form_Element_Text('guanjianci', NULL, NU
     $form->addInput($guanjianci);
     $haibaobq = new Typecho_Widget_Helper_Form_Element_Text('haibaobq', NULL, NULL, _t('海报版权'), _t(''));
     $form->addInput($haibaobq);
-    $likekey = new Typecho_Widget_Helper_Form_Element_Text('likekey', NULL, NULL, _t('猜你喜欢'), _t(''));
-    $form->addInput($likekey);
+    $xgwz = new Typecho_Widget_Helper_Form_Element_Text('xgwz', NULL, NULL, _t('相关文章'), _t(''));
+    $form->addInput($xgwz);
 }
 function themeFields($layout) {
     $toutu = new Typecho_Widget_Helper_Form_Element_Text('toutu', NULL, NULL, _t('文章头图'), _t(''));
@@ -43,7 +43,6 @@ function spacing ($text)
 {
     $text = preg_replace ('~((?![年月日号])\p{Han})([a-zA-Z0-9+$@#\[\(\/‘“])~u', '\1 \2', $text);
     $text = preg_replace ('~([a-zA-Z0-9+$’”\]\)@#!\/]|[\d [年月日]]{2,})((?![年月日号])\p{Han})~u', '\1 \2', $text);
-    # Fix () [] near the English and number
     $text = preg_replace ('~([a-zA-Z0-9]+)([\[\(‘“])~u', '\1 \2', $text);
     $text = preg_replace ('~([\)\]’”])([a-zA-Z0-9]+)~u', '\1 \2', $text);
     return $text;
