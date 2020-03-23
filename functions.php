@@ -12,18 +12,30 @@ function themeConfig($form) {
     $form->addInput($pinglunkey);
 	$pnfpic = new Typecho_Widget_Helper_Form_Element_Text('pnfpic', NULL, NULL, _t('404图片'), _t(''));
     $form->addInput($pnfpic);
-	$dibus = new Typecho_Widget_Helper_Form_Element_Text('dibus', NULL, NULL, _t('底部上'), _t(''));
+	$dibus = new Typecho_Widget_Helper_Form_Element_Text('dibus', NULL, NULL, _t('网站版权'), _t(''));
     $form->addInput($dibus);
-	$dibux = new Typecho_Widget_Helper_Form_Element_Text('dibux', NULL, NULL, _t('底部下'), _t(''));
+	$dibux = new Typecho_Widget_Helper_Form_Element_Text('dibux', NULL, NULL, _t('备案号'), _t(''));
     $form->addInput($dibux);
 	$miaoshu = new Typecho_Widget_Helper_Form_Element_Text('miaoshu', NULL, NULL, _t('描述'), _t(''));
     $form->addInput($miaoshu);
-$guanjianci = new Typecho_Widget_Helper_Form_Element_Text('guanjianci', NULL, NULL, _t('关键词'), _t(''));
+    $guanjianci = new Typecho_Widget_Helper_Form_Element_Text('guanjianci', NULL, NULL, _t('关键词'), _t(''));
     $form->addInput($guanjianci);
     $haibaobq = new Typecho_Widget_Helper_Form_Element_Text('haibaobq', NULL, NULL, _t('海报版权'), _t(''));
     $form->addInput($haibaobq);
     $xgwz = new Typecho_Widget_Helper_Form_Element_Text('xgwz', NULL, NULL, _t('相关文章'), _t(''));
     $form->addInput($xgwz);
+    $dark = new Typecho_Widget_Helper_Form_Element_Radio('dark',
+        array(
+            'css.css' => _t('关闭'),
+            'dark.css.css' => _t('开启'),
+        ), _t('是否开启夜间模式'), _t('是否开启夜间模式'));
+    $form -> addInput($dark);
+       $banquan = new Typecho_Widget_Helper_Form_Element_Radio('banquan',
+        array(
+            'display:none' => _t('关闭'),
+            '' => _t('开启'),
+        ), _t('是否页脚处展现主题版权'), _t('是否页脚处展现主题版权'));
+    $form -> addInput($banquan);
 }
 function themeFields($layout) {
     $toutu = new Typecho_Widget_Helper_Form_Element_Text('toutu', NULL, NULL, _t('文章头图'), _t(''));

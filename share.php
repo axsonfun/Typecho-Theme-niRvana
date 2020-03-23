@@ -10,7 +10,7 @@
 <div class="wechat-cover modal-dialog" role="document" style="transform:scale(0.8);margin-top: -40px;margin-bottom: -60px">
 <div class="modal-content">
 <div class="modal-header" style="background: url(<?php $this->fields->toutu(); ?>) no-repeat;background-size: cover;height:400px;text-align: center;background-position: center;">
-<h3 style="margin-top:350px;color:#fff"><?php $this->title() ?></h3><p>
+<h3 style="padding-left: 15px;padding-right: 15px;margin-top:350px;color: #fff;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.5));line-height: unset!important;margin-left: -15px;margin-right: -15px;"><?php $this->title() ?></h3><p>
 </p></div>
 <div class="modal-body" style="text-align:center"><img src="https://api.qrserver.com/v1/create-qr-code/?size=90x90&color=8492a6&margin=0&data=<?php $this->permalink() ?>" style="margin:0 0 12px 0"><p style="color: #8492a6">扫描二维码阅读详细内容</br><?php $this->options->haibaobq(); ?></p></div>
 </div>
