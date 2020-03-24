@@ -3,7 +3,7 @@
  * 作品展示模板，适用于设计稿、摄影、图片新闻等以图片为中心的展示。本模板版权归 PANDA Studio 所有，KicoModo 为本主题正版用户，移植本主题仅供学习参考，请勿用于商业用途，必须在24小时内删除！
  * @package niRvana
  * @author KicoModo
- * @version 3.0
+ * @version 3.2
  * @link https://www.kicomodo.com
  */
  ?>
