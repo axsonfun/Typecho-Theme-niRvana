@@ -3,7 +3,7 @@
  * 作品展示模板，适用于设计稿、摄影、图片新闻等以图片为中心的展示。本模板版权归 PANDA Studio 所有，KicoModo 为本主题正版用户，移植本主题仅供学习参考，请勿用于商业用途，必须在24小时内删除！
  * @package niRvana
  * @author KicoModo
- * @version 3.2
+ * @version 3.3
  * @link https://www.kicomodo.com
  */
  ?>
@@ -18,7 +18,7 @@
 </ul></div></div>
 <div class="col-xs-12"><div class="row"><div class="row postLists cards" height-to="sidebar">
 <?php while($this->next()): ?>
-<div class="col-xxs-6 col-xs-4 col-lg-2_5 post-card-wrapper"><div class="card"><a href="<?php $this->permalink() ?>" class="cover" style="background-image: url(<?php $this->fields->toutu(); ?>);" showas="padding"></a><a href="<?php $this->permalink() ?>" showas="img"><img src="<?php $this->fields->toutu(); ?>" class="cover" alt=""></a><div class="meta"><h2><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2><div class="tags"><a class="color-<?php echo rand(1,8); ?>"><?php $category->name(); ?></a>
+<div class="col-xxs-6 col-xs-4 col-lg-2_5 post-card-wrapper"><div class="card"><a href="<?php $this->permalink() ?>" class="cover" style="background-image: url(<?php $this->fields->toutu(); ?>);" showas="padding"></a><a href="<?php $this->permalink() ?>" showas="img"><img src="<?php $this->fields->toutu(); ?>" class="cover" alt=""></a><div class="meta"><h2><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2><div class="tags"><a class="color-<?php echo rand(1,8); ?>"><?php $this->category(' · ', false); ?></a>
 </div><div class="summary"><span class="comments"><i class="icon font_family icon-clock"></i> <?php $this->date('n月j日 · Y年'); ?></span> </div></div></div></div>
 <?php endwhile; ?>
 </div>
