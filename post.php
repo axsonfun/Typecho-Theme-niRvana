@@ -12,7 +12,7 @@
 </div></div></div></div>
 <div class="imgColor" style="background:url(<?php $this->fields->toutu(); ?>) no-repeat;-webkit-filter: blur(50px);-moz-filter: blur(50px);-ms-filter: blur(50px);filter: blur(50px);transform: scale(1.2);background-size:cover;background-position: center;"></div>
 </div></div>
-<div class="container postListsModel"><div class="row"><div class="col-md-12 col-lg-12"><div class="col-xs-12"><div class="row postLists"><div class="article_wrapper post clearfix"><div class="meta"><span class="inline-block"><i class="icon font_family icon-clock"></i><?php $this->date('n月j日 · Y年'); ?></span><span class="inline-block"><i class="icon font_family icon-bookmark"></i><?php $this->category(' · ', false); ?></span>
+<div class="container postListsModel"><div class="row"><div class="col-md-12 col-lg-12"><div class="col-xs-12"><div class="row postLists"><div class="article_wrapper post clearfix"><div class="meta"><span class="inline-block"><i class="icon font_family icon-clock"></i><?php $this->date('n月j日 · Y年'); ?></span><span class="inline-block"><i class="icon font_family icon-bookmark"></i><?php $this->category(''); ?></span>
 </div><article class="clearfix">
 <?php $this->content(); ?>
 </article>

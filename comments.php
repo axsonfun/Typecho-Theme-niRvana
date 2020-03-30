@@ -1,4 +1,7 @@
-<div id="vcomments"></div><script src="<?php $this->options->themeUrl('comment.js'); ?>"></script><script>
+<div id="vcomments"></div>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="<?php $this->options->themeUrl('comment.js'); ?>"></script>
+<script>
   var valine = new Valine();
   valine.init({
     el: '#vcomments' ,
