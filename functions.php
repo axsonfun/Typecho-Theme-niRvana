@@ -24,12 +24,6 @@ function themeConfig($form) {
     $form->addInput($haibaobq);
     $xgwz = new Typecho_Widget_Helper_Form_Element_Text('xgwz', NULL, NULL, _t('相关文章'), _t(''));
     $form->addInput($xgwz);
-    $dark = new Typecho_Widget_Helper_Form_Element_Radio('dark',
-        array(
-            'css.css' => _t('关闭'),
-            'dark.css.css' => _t('开启'),
-        ), _t('是否开启夜间模式'), _t('是否开启夜间模式'));
-    $form -> addInput($dark);
        $banquan = new Typecho_Widget_Helper_Form_Element_Radio('banquan',
         array(
             'display:none' => _t('关闭'),

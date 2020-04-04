@@ -5,7 +5,7 @@
 </head><body class="black-color dark-slider"><div id="wrapper"><div class="row">
 <?php include('sidebar.php'); ?>
 </div></div>
-<div id="main"><div class="container coverflow-wrapper"><div id="coverflow" class="unfull"><div class="showBox"><div class="current"><div class="page"><div class="container flex-row-middle coverflow"><div class="content flex-column-middle" style="width: 100%;"><div class="category" ><?php $this->category(''); ?></div><h1><?php $this->title() ?></h1></div>
+<div id="main"><div class="container coverflow-wrapper"><div id="coverflow" class="unfull"><div class="showBox"><div class="current"><div class="page"><div class="container flex-row-middle coverflow"><div class="content flex-column-middle" style="width: 100%;"><h1><?php $this->title() ?></h1></div>
 <div class="image flex-center">
 <div class="card" style="background-image: url(<?php $this->fields->toutu(); ?>);"></div>
 </div>
